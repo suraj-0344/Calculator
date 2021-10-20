@@ -1,0 +1,107 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body, height{
+	height: 100vh;
+}
+body{
+width: 100%;
+
+ 
+ background: url(assets/IMAGE.jpg) repeat center ;
+background-attachment: fixed;
+background-size: cover;
+}
+@media(min-width: 700px){
+	body{
+		display: flex;
+ justify-content: center;
+ align-items: center;
+	}
+}
+#calculator{
+	
+	background-color: hsla(280, 100%, 70%, 70%);
+   
+	
+	
+	border: 1px solid black;
+	
+}
+
+	#calculator{
+	width: 400px;
+	height: 500px;	
+   /* position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);  */
+	
+	}
+	
+
+
+.display{
+	width: 100%;
+	height: 5rem;
+	background-color: hsl(0, 0%, 100%);
+	border-bottom: 1px solid black;
+	font-size: 22px;
+    text-align: right;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	box-shadow: inset 1px 1px 2px 5px hsl(0, 0%, 70%);
+	
+	
+}
+
+.row{
+	width: 100%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	
+}
+button{
+	font-size: 20px;
+	padding: 8px;
+	width: 70px;
+	text-align: center;
+	border: none;
+	margin: 12px;
+	background: hsl(0, 0%, 100%);
+	border: 1px solid black;
+	box-shadow: 1px 1px 2px 2px black;
+	outline: none;
+}
+.green{
+	background-color: hsl(120, 61%, 75%);
+	color: black;
+}
+.red{
+	background-color: hsl(12, 100%, 65%);
+}
+.yellow{
+	background-color: hsl(60, 100%, 75%);
+}
+.left{
+	float: right;
+	margin-right: 1.4rem;
+	
+}
+@media(max-width: 700px){
+	#calculator{
+	max-width: 400px;
+	height: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+		
+		
+	}
+	
+	
+	
+} 
